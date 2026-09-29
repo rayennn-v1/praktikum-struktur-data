@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int nilai[5];
+
+    nilai[0] = 80;
+    nilai[1] = 85;
+    nilai[2] = 90;
+    nilai[3] = 75;
+    nilai[4] = 95;
+
+    for (int i = 0; i < 5; i++) {
+        cout << nilai[i] << endl;
+    }
+    return 0;
+}
