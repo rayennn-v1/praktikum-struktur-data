@@ -1,5 +1,5 @@
 #include <iostream>
-#define MAX 9
+#define MAX 5
 using namespace std;
 
 int main() {
@@ -27,7 +27,7 @@ int main() {
     for (i = 0; i < MAX; i++)
         cout << "nilai k-" << i + 1 << " = " << nilai[i] << endl;
 
-    cout << "\ndata nilai tahunan :\n";
+    cout << "\nnilai tahunan :\n";
 
     // menampilkan array dua dimensi
     for (i = 0; i < MAX; i++) {

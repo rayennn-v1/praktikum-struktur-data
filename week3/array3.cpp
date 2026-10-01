@@ -16,10 +16,9 @@ int main() {
     };
 
     for (int i = 0; i < 2; i++) {
-        cout << "Layer " << i + 1 << ":" << endl;
         for (int j = 0; j < 3; j++) {
             for (int k = 0; k < 3; k++) {
-                cout << data[i][j][k] << " ";
+                cout << data[1][j][k] << " ";
             }
             cout << endl;
         }

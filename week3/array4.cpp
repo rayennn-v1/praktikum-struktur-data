@@ -25,8 +25,8 @@ int main() {
         }
     };
 
-    cout << data[0][0][0][0] << endl; // Output: 1
-    cout << data[1][1][1][1] << endl; // Output: 16
+    cout << data[0][0][0][0] << endl; // 1
+    cout << data[1][1][1][1] << endl; // 16
 
     return 0;
 }
