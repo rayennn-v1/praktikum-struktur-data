@@ -34,7 +34,7 @@ int main() {
         for (j = 0; j < MAX; j++)
             cout << nilai_tahun[i][j];
 
-            cout << "\n";
+        cout << "\n";
     }
 
     return 0;
