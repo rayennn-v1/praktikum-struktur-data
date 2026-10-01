@@ -11,7 +11,8 @@ int main() {
     nilai[4] = 95;
 
     for (int i = 0; i < 5; i++) {
-        cout << nilai[i] << endl;
+        cout << "index ke-" << i << " = " << nilai[i] << endl;
     }
+    
     return 0;
 }
