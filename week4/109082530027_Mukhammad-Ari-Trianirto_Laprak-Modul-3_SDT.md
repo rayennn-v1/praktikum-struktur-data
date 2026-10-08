@@ -332,7 +332,6 @@ int main() {
 ##### Output 1
 ![Screenshot Output Unguided 3_1](https://raw.githubusercontent.com/rayennn-v1/praktikum-struktur-data/main/week4/Screenshot-unguided-3.png)
 
-Berikut adalah penjelasan singkat untuk program pada Unguided 3 yang bisa Anda gunakan pada laporan:
 
 Program pada Unguided 3 ini mendemonstrasikan operasi manipulasi memori dan indeks menggunakan array 2 dimensi (3x3) dan pointer pada C++. Program ini terdiri dari tiga prosedur utama, yaitu:
 
