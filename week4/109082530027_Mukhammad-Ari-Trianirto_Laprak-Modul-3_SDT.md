@@ -330,17 +330,36 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://raw.githubusercontent.com/rayennn-v1/praktikum-struktur-data/main/week4/Screenshot-unguided-3.png)
+![Screenshot Output Unguided 3_1](https://raw.githubusercontent.com/rayennn-v1/praktikum-struktur-data/main/week3/Screenshot-unguided-3.1.png)
 
-Program pada Unguided 3 ini mendemonstrasikan operasi manipulasi memori dan indeks menggunakan array 2 dimensi (3x3) dan pointer pada C++. Program ini terdiri dari tiga prosedur utama, yaitu:
+##### Output 2
+![Screenshot Output Unguided 3_2](https://raw.githubusercontent.com/rayennn-v1/praktikum-struktur-data/main/week3/Screenshot-unguided-3.2.png)
 
-tampilArray: Menggunakan perulangan bersarang (nested loop) untuk mencetak seluruh elemen dari array 2D ke layar.
+Program pada Unguided 3 merupakan implementasi program interaktif berbasis menu menggunakan struktur switch-case untuk menganalisis data pada sebuah array satu dimensi. Program ini menerapkan konsep pemrograman modular dengan memisahkan logika perhitungan ke dalam fungsi (mengembalikan nilai) dan prosedur (tidak mengembalikan nilai).
 
-tukarIsiArray: Berfungsi untuk menukar elemen pada posisi (baris dan kolom) tertentu antara dua buah array 2D dengan bantuan variabel sementara (temp), dilengkapi dengan validasi agar indeks tidak keluar dari batas array.
+Berikut adalah rincian alur kerja program tersebut:
 
-tukarNilaiPointer: Digunakan untuk menukar nilai dari dua variabel integer di dalam memori secara langsung dengan menggunakan dereference operator (*) pada pointer.
+1. Inisialisasi Data: Pada fungsi utama (main), program mendeklarasikan array satu dimensi arrA beserta isinya secara statis. Program juga secara dinamis menghitung jumlah elemen array menggunakan rumus sizeof(arrA) / sizeof(arrA[0]) yang disimpan dalam variabel ukuran. Hal ini memastikan kode tetap valid meskipun elemen array ditambah atau dikurangi.
 
-Pada program utama (main), seluruh prosedur tersebut dipanggil secara berurutan untuk memperlihatkan kondisi awal data, lalu menampilkan hasil setelah elemen spesifik pada array dan nilai pada pointer berhasil ditukar.
+2. Fungsi Pencarian (cariMaksimum & cariMinimum): Keduanya merupakan fungsi bertipe int yang menerima pengiriman parameter berupa array beserta ukurannya.
+
+- cariMaksimum: Menginisialisasi variabel maks dengan elemen pertama array, lalu melakukan perulangan untuk mengecek satu per satu. Jika ada nilai yang lebih besar dari maks, maka nilai maks akan diperbarui. Hasil akhirnya akan di-return.
+
+- cariMinimum: Logikanya sama dengan pencarian maksimum, namun ia membandingkan elemen untuk mencari nilai yang lebih kecil dan menyimpannya di variabel min.
+
+3. Prosedur hitungRataRata: Merupakan sub-program bertipe void yang bertugas menghitung rata-rata elemen array. Prosedur ini menjumlahkan semua isi array ke dalam variabel total, membaginya dengan jumlah ukuran elemen, dan langsung mencetak hasilnya ke layar tanpa melakukan return nilai ke program utama.
+
+4. Menu Interaktif (Perulangan & Percabangan): Program menggunakan struktur perulangan do-while agar menu utama terus ditampilkan hingga pengguna memilih opsi untuk keluar.
+
+- Input pilihan pengguna diproses menggunakan switch-case.
+
+- Case 1 mencetak isi array.
+
+- Case 2 dan 3 memanggil fungsi pencarian (maks/min) dan mencetak nilai yang dikembalikan.
+
+- Case 4 memanggil prosedur rata-rata.
+
+- Case 0 akan menghentikan perulangan do-while dan menyelesaikan program dengan pesan perpisahan. Jika input tidak sesuai (selain 0-4), default akan memberikan peringatan kepada pengguna.
 
 ## Kesimpulan
 Berdasarkan praktikum Modul 3 ini, dapat disimpulkan bahwa Abstract Data Type (ADT) adalah konsep fundamental yang sangat penting untuk membangun program yang modular, terorganisir, dan mudah dikelola. Dengan menerapkan ADT melalui tipe data bentukan (seperti struct), kita dapat mengelompokkan berbagai jenis data yang saling berkaitan menjadi satu kesatuan logis. Praktikum ini membuktikan keunggulan paradigma pemrograman modular pada C++, di mana spesifikasi program (file .h), realisasi logika (file .cpp), dan eksekusi program utama (main.cpp) dipisahkan secara rapi. Pemisahan ini menerapkan prinsip information hiding dan reusability, sehingga kode menjadi lebih bersih dan mudah dikembangkan. Selain itu, implementasi array (baik 1D maupun 2D) dan penggunaan pointer dalam praktikum ini menunjukkan bagaimana kita dapat mengelola sekumpulan data serta melakukan manipulasi memori secara langsung dan efisien.
